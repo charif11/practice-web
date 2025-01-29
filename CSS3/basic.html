@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic css</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content {
+            border: 1px solid white;
+            color: white;
+            display: grid;
+            /* grid-template-columns: 1fr 3fr 1fr; */
+            grid-template-columns: repeat(3,33%);
+            grid-template-rows: auto;
+        }
+        .content p {
+            border: 1px solid white;
+            width: 100%;
+            height: 20vh;
+            overflow-y: scroll;
+            font-size: 2rem;
+        }
+        .item {
+            /* background-color: orange; */
+            /* border: 1px solid white; */
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .item h3 {
+            font-size: 1.5rem;
+            text-align: left;
+        }
+        img{
+            width: 100%;
+            /* opacity: 0.7; */
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .img-1 img{
+            opacity: 0.5;
+        }
+        .img-2 img{
+            opacity: 1;
+        }
+        .img-1 img:hover{
+            opacity: 1;
+        }
+        .img-2 img:hover{
+            opacity: 0.7;
+        }
+        .img-1{
+            border: 1px solid white;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+        }
+        .img-2{
+            border: 1px solid blue;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+        }
+        .item:last-child{
+            grid-column: 1/4;
+        }
+        .item-footer h4{
+            text-align: center;
+            margin-top: 5px;
+            /* border: 1px solid white; */
+        }
+        .fb{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="../index.html">HTML</a>
+        <a href="basic.html">basic</a>
+        <a href="flex.html">flex</a>
+        <a href="grid.html">grid</a>
+        <a href="layout.html">layout</a>
+        <a href="log/login.html">LOGIN</a>
+    </nav>
+
+    <div class="content">
+        <div class="item">
+            <h3>Overflow</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magnam quibusdam architecto provident
+                quia
+                quos nihil autem porro, eius voluptates perferendis, inventore alias iure consectetur ipsa! Corrupti,
+                quae odit cumque recusandae tempora ullam rem magnam. Exercitationem repudiandae itaque facilis ipsum?
+            </p>
+        </div>
+        <div class="item">
+            <h3>Images Opacity</h3>
+            <div class="img-1">
+                <img src="https://images.alphacoders.com/135/thumb-1920-1353728.jpeg" alt="">
+                <img src="https://images.alphacoders.com/135/thumb-1920-1353728.jpeg" alt="">
+                <img src="https://images.alphacoders.com/135/thumb-1920-1353728.jpeg" alt="">
+                <img src="https://images.alphacoders.com/135/thumb-1920-1353728.jpeg" alt="">
+            </div>
+            <div class="img-2">
+                <img src="https://images5.alphacoders.com/121/thumb-1920-1217583.png" alt="">
+                <img src="https://images5.alphacoders.com/121/thumb-1920-1217583.png" alt="">
+                <img src="https://images5.alphacoders.com/121/thumb-1920-1217583.png" alt="">
+                <img src="https://images5.alphacoders.com/121/thumb-1920-1217583.png" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <h3>Images Opacity</h3>
+
+        </div>
+
+        <div class="item item-footer">
+            <hr>
+            <h4>&copy;Charif | <a class="fb" href="https://www.facebook.com/nong.charif.846">FB:Nong Charif</a> | ID Line:n_charif01</h4>
+        </div>
+    </div>
+</body>
+
+</html>

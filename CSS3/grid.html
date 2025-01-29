@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic css</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            background-color: aqua;
+            display: grid;
+            /* grid-template-rows: repeat(3,1fr); */
+            /* grid-template-columns: repeat(4,auto); */
+        }
+
+        .item {
+            background-color: orange;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 10px;
+            /* width: 200px; */
+            height: 10vh;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px 1px rgb(0, 0, 0);
+        }
+
+        .item:first-child{
+            background-color: blueviolet;
+            grid-column: 1/5;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="../index.html">HTML</a>
+        <a href="basic.html">basic</a>
+        <a href="flex.html">flex</a>
+        <a href="grid.html">grid</a>
+        <a href="layout.html">layout</a>
+        <a href="log/login.html">LOGIN</a>
+    </nav>
+
+    <div class="container">
+        <div class="item item-1">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item item-2">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item item-3">
+            <h3>Item 3</h3>
+        </div>
+        <div class="item item-4">
+            <h3>Item 4</h3>
+        </div>
+        <div class="item item-5">
+            <h3>Item 5</h3>
+        </div>
+        <div class="item item-6">
+            <h3>Item 6</h3>
+        </div>
+        <div class="item item-7">
+            <h3>Item 7</h3>
+        </div>
+        <div class="item item-8">
+            <h3>Item 8</h3>
+        </div>
+        <div class="item item-9">
+            <h3>Item 9</h3>
+        </div>
+        <div class="item item-10">
+            <h3>Item 10</h3>
+        </div>
+        <div class="item item-11">
+            <h3>Item 11</h3>
+        </div>
+    </div>
+
+</body>
+
+</html>
