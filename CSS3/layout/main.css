@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Exo 2", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* height: 300vh; */
+    position: relative;
+}
+nav{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    background-color: #492f33;
+    align-items: center;
+    color: white;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    padding: 0 1rem;
+    z-index: 99;
+}
+.log li a{
+    border-radius: 1rem;
+    font-weight: bolder;
+    padding: .25rem .75rem;
+}
+.sign-in{
+    outline: 1px solid white;
+    transition: .4s;
+}
+.sign-in:hover{
+    background-color: white;
+    color: #492f33;
+    text-decoration: none;
+}
+.log-out{
+    background-color: white;
+    margin-left: .5rem;
+    color: #492f33;
+    transition: .4s;
+}
+.log-out:hover{
+    text-decoration: none;
+    outline: 1px solid white;
+    background-color: #492f33;
+    color: white;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+ul li a{
+    padding: 0 1rem;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+ul li a:hover{
+    text-decoration: underline;
+    color: rgb(175, 175, 175);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    position: relative;
+    padding: 12rem 1rem;
+    font-size: 1.5rem;
+    color: white;
+    background: url('https://4kwallpapers.com/images/walls/thumbs_3t/20820.jpg') no-repeat scroll center center;
+    background-size: cover;
+}
+header::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.3;
+}
+.top{
+    text-align: center;
+    z-index: 1;
+}
+.down{
+    margin-top: 3rem;
+    z-index: 1;
+}
+.down a{
+    text-decoration: none;
+    background-color: brown;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 4px black;
+    transition: .3s;
+}
+.down a:hover{
+    background-color: rgb(163, 93, 93);
+}
+section{
+    border: black 1px solid;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto);   
+}
+.box{
+    padding: 2rem 4rem;
+    text-align: center;
+    border-right: 1px solid black;
+}
+.box img{
+    width: 50%; 
+    border-radius: 100%;
+    margin: 2rem 0;
+}
+.box a{
+    color: white;
+    background-color: brown;
+    padding: .5rem 1.5rem;
+    text-decoration: none;
+    border-radius: .75rem;
+    box-shadow: 0 0 4px black;
+    transition: .3s;
+}
+.box a:hover{
+    background-color: rgb(163, 93, 93);
+}
+.box p{
+    margin-bottom: 1.5rem;
+}
+footer{
+    background-color: #492f33;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
